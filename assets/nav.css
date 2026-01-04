@@ -1,0 +1,100 @@
+/* Navigation */
+.vertical-buttons {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;              /* Flexbox */
+    flex-direction: row;        /* 👉 Knoppen naast elkaar */
+    gap: 12px;                  /* Ruimte tussen knoppen */
+    justify-content: flex-start; /* Links uitlijnen */
+}
+
+/* Knoppen */
+.vertical-buttons li a {
+    display: block;
+    padding: 0.5em 1.2em;
+    background-color: #f6c7d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;         /* Centraal in de knop */
+    font-size: 1em;
+    transition: 0.3s;
+    white-space: nowrap;        /* 👉 voorkomt dat knoppen op 2 lijnen breken */
+}
+
+/* Hover */
+.vertical-buttons li a:hover {
+    background-color: #f6c7d8;
+    text-decoration: none;
+    transform: scale(1.05);     /* Mooier voor horizontale menu’s */
+}
+
+/* HOME-knop tekst donkerroze */
+.vertical-buttons li a.home {
+    color: #f6c7d8;   /* Donkerroze */
+}
+
+/* ==========================================
+   TITEL STYLING
+========================================== */
+
+/* Zelfde grootte als “Lesweken” */
+.week-title {
+  font-size: 3rem;       /* Titel groter */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: hsl(313, 100%, 94%) !important; /* Zelfde roze als header */
+}
+
+
+/* ==========================================
+   FOTO'S LINKS — TEKST RECHTS
+========================================== */
+
+.content-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Linker kolom: foto's onder elkaar, links uitgelijnd */
+.left-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Rechter kolom: titel + tekst */
+.right-column {
+  width: 60%;
+  color: #e6e6e6;
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
+
