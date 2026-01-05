@@ -1,4 +1,5 @@
-/* Navigation */
+/* Navigation styles consolidated in `assets/styles.css` for consistency.
+   Keep this file for compatibility; all shared layout & nav rules live in `assets/styles.css` */
 
 .vertical-buttons {
     font-family: 'Montserrat';

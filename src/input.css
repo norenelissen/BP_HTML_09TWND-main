@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind component utilities (migrated from legacy CSS) */
+@layer components {
+  .back-home-link {
+    @apply font-bold underline;
+  }
+
+  .nav-btn {
+    @apply inline-block px-4 py-2 rounded bg-brand-pink text-white uppercase font-bold text-center;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded bg-brand-primary text-white;
+  }
+
+  .link-underline {
+    @apply underline;
+  }
+}

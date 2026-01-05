@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind Fonts Overview</title>
+  <title>Prototyping Tools – Procesdocument</title>
+
+  <!-- Jouw bestaande CSS -->
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="assets/flexboxes.css">
   <link rel="stylesheet" href="assets/nav.css">
   <link rel="stylesheet" href="assets/typography.css">
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Nore Nelissen - 1GDM1</h1>
-        </div>
-        <div>
-            <ul class="vertical-buttons">
-                <li><a href="Index.html" class="home">Home</a></li>
-                <li><a href="week1.html">Lesweek 1</a></li>
-                <li><a href="week2.html">Lesweek 2</a></li>
-                <li><a href="week3.html">Lesweek 3</a></li>
-                <li><a href="week4.html">Lesweek 4</a></li>
-                <li><a href="week5.html">Lesweek 5</a></li>
-                <li><a href="week6.html">Lesweek 6</a></li>
-                <li><a href="week7.html">Lesweek 7</a></li>
-                <li><a href="week8.html">Lesweek 8</a></li>
-                <li><a href="week9.html">Lesweek 9</a></li>
-                <li><a href="week10.html">Lesweek 9</a></li>
-            </ul>
-        </div>
-        <page>
-            <h2>Lesweek 4</h2>
-            <p>
-               In de vierde week heb ik een screenshot van de treinschermen gemaakt. Die zette ik in ChatGPT en in vroeg een html en css code. Nadien vroeg ik om nog een paar aanpassingen te maken tot ik er tevreden over was. 
+  <link rel="stylesheet" href="assets/homepage.css">
 
-            </p>
-            <!-- Flex container with 2 columns -->
-            <div class="two-columns">
-                <div class="column">
-                </div>
-                <div class="column">
-                </div>
-            </div>
-        </page>
+  <!-- Nieuwe CSS -->
+  <link rel="stylesheet" href="assets/custom-dark.css">
+</head>
+
+<body>
+
+  <!-- HERO (migrated to Tailwind utilities) -->
+  <section class="bg-brand-pink py-20 px-10">
+    <div class="max-w-6xl mx-auto">
+      <p class="small-mail uppercase text-sm tracking-wide">Nore Nelissen - 1GDM1</p>
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mt-4">
+        Prototyping Tools<br>
+        Procesdocument
+      </h1>
     </div>
+  </section>
+
+  <!-- WEEK KNOPPEN (migrated to Tailwind utilities) -->
+  <section class="py-20 px-10">
+    <div class=" max-w-6xl mx-auto">
+          <a href="Index.html" class="back-home-link max-w-6xl mx-auto">Back home</a>
+    </div>
+        
+     
+    <h2 class="text-4xl font-extrabold mb-8 max-w-6xl mx-auto">Lesweken</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+      <a href="week1.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 1</a>
+      <a href="week2.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 2</a>
+      <a href="week3.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 3</a>
+      <a href="week4.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center bg-brand-pink transition">Week 4</a>
+      <a href="week5.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 5</a>
+      <a href="week6.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 6</a>
+      <a href="week7.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 7</a>
+      <a href="week8.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 8</a>
+      <a href="week9.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 9</a>
+      <a href="week10.html" class="block px-5 py-3 border-2 border-black text-black text-lg text-center transition hover:bg-black hover:text-white">Week 10</a>
+    </div>
+  </section>
+
+  <!-- ZWARTE SECTIE -->
+  <section class="dark-section">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="week-title">Lesweek 4</h2>
+        <p>
+           In de vierde week heb ik een screenshot van de treinschermen gemaakt. Die zette ik in ChatGPT en in vroeg een html en css code. Nadien vroeg ik om nog een paar aanpassingen te maken tot ik er tevreden over was. 
+        </p>
+      </div>
+    <div class="content-wrapper max-w-6xl mx-auto">
+
+      <div class="left-column">
+        <div class="photo-frame">
+          <img src="./images/4/treinrooster_chatgpt.png" alt="Foto 1">
+        </div>
+      </div>
+
+      
+
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <p>
+    © 2026 – AP Prototyping Tools - projectdocumentatie |
+    <a href="https://github.com/norenelissen/BP_HTML_09TWND-main" target="_blank" rel="noopener">
+      https://github.com/norenelissen
+    </a>
+  </p>
+</footer>
+
+
 </body>
 </html>
-
-

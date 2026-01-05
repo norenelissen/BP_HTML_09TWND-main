@@ -23,8 +23,8 @@
 
 .modal-content {
     font-family: 'Montserrat';
-    background-color: #000000;
-    color: #e5e5e5;
+    background-color: var(--black);
+    color: var(--muted);
     padding: 30px 40px;
     border-radius: 8px;
     text-align: center;
@@ -35,11 +35,11 @@
 
 .modal-content h2 {
     margin: 0 0 10px;
-    color: #ffffff;
+    color: var(--white);
 }
 .modal-content hp {
     margin: 0 0 10px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .modal-close {
@@ -49,9 +49,9 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: #929292;
+    color: var(--muted-dark);
 }
 
 .modal-close:hover {
-    color: #ffffff;
+    color: var(--white);
 }

@@ -6,10 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --pink: #f6c7d8;
+  --accent: #11b1b1;
+  --page-bg: antiquewhite;
+  --text-color: #161717;
+  --white: #ffffff;
+}
 
 body{
-    background-color: antiquewhite;
-    color: #161717;
+    background-color: var(--page-bg);
+    color: var(--text-color);
     height:auto;
     min-height:100vh;
 }
